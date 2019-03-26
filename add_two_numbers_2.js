@@ -24,5 +24,5 @@ var addTwoNumbers = function (l1, l2) {
 
   }
 
-  return tailNode.val == 0 ? tailNode.next : tailNode;
+  return tailNode.val === 0 ? tailNode.next : tailNode;
 };
