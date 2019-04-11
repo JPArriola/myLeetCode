@@ -7,7 +7,7 @@ var setZeroes = function (matrix) {
   }
 
   while (zeroPositions.length) {
-    let currPos = zeroPositions.shift();
+    let currPos = zeroPositions.pop();
     let [r, c] = currPos;
     matrix[r].forEach((el, i) => matrix[r][i] = 0);
     matrix.forEach((el, i) => matrix[i][c] = 0);
